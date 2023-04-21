@@ -8,18 +8,14 @@
 
 ### serde & serde_json
 
-## 数据库相关
+## Web
 
-### cornucopia
+### axum
 
-CRUD，通过配置 SQL，生成 Rust 代码。
+tokio 官方出品，基于tower
 
-### refinery
-
-自动创建数据表，用于升级迁移。
-
-## 数学运算
-
-### peroxide
-
-矩阵运算
+1. <https://www.cnblogs.com/yjmyzz/p/axum_tutorial_1_hello_world.html>
+2. <https://www.cnblogs.com/yjmyzz/p/axum_tutorial_2_response.html>
+3. Extract: 从Request请求中提取想要的内容<https://www.cnblogs.com/yjmyzz/p/axum_tutorial_3_extractor.html>
+4. 上传文件<https://www.cnblogs.com/yjmyzz/p/axum_tutorial_4_upload_file.html>
+5. 处理静态资源<https://www.cnblogs.com/yjmyzz/p/axum_tutorial_5_static_file.html>
