@@ -1,25 +1,9 @@
-# README
+# rust core os
 
-## 序列化
+## 第一章
 
-### bincode
+### 操作系统内核应用
 
-序列化、反序列化对象，存储资源占用较小。
-
-### serde & serde_json
-
-## 数据库相关
-
-### cornucopia
-
-CRUD，通过配置 SQL，生成 Rust 代码。
-
-### refinery
-
-自动创建数据表，用于升级迁移。
-
-## 数学运算
-
-### peroxide
-
-矩阵运算
+- 普通应用程序去掉标准库（gnu libc），同时自动去除了系统调用;
+- 根据CPU架构设置好入口地址，使用汇编调用rust 函数。
+- 配置linker，设置入口汇编、栈空间。
