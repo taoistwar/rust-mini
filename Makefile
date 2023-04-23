@@ -1,9 +1,9 @@
 # Building
 TARGET := riscv64gc-unknown-none-elf
 MODE := release
-KERNEL_ELF := os/target/$(TARGET)/$(MODE)/rust-mini
+KERNEL_ELF := target/$(TARGET)/$(MODE)/rust-mini
 KERNEL_BIN := $(KERNEL_ELF).bin
-DISASM_TMP := os/target/$(TARGET)/$(MODE)/asm
+DISASM_TMP := target/$(TARGET)/$(MODE)/asm
 
 # Building mode argument
 ifeq ($(MODE), release)
@@ -13,7 +13,7 @@ endif
 # BOARD
 BOARD := qemu
 SBI ?= rustsbi
-BOOTLOADER := ../bootloader/$(SBI)-$(BOARD).bin
+BOOTLOADER := ./bootloader/$(SBI)-$(BOARD).bin
 
 # KERNEL ENTRY
 KERNEL_ENTRY_PA := 0x80200000
